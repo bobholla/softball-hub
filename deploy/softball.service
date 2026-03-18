@@ -1,0 +1,14 @@
+[Unit]
+Description=Softball Dynasty Hub
+After=network.target
+
+[Service]
+User=bobby
+Group=bobby
+WorkingDirectory=/var/www/softball.softballdynasty.com
+Environment="PATH=/var/www/softball.softballdynasty.com/venv/bin"
+ExecStart=/var/www/softball.softballdynasty.com/venv/bin/gunicorn --workers 2 --bind 127.0.0.1:8002 app:app
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

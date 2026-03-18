@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Dashboard — Softball Dynasty{% endblock %}
+
+{% block content %}
+<section class="dashboard">
+    <h1>Dashboard</h1>
+    <p>Welcome back, {{ current_user.username }}!</p>
+
+    <div class="dashboard-grid">
+        <div class="dash-card">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="https://stats.softballdynasty.com">Stats App</a></li>
+                <li><a href="https://schedule.softballdynasty.com">Schedule App</a></li>
+                <li><a href="https://colleges.softballdynasty.com">Colleges App</a></li>
+                <li><a href="https://play.softballdynasty.com">Play Dynasty</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock %}

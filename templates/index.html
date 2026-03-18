@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Softball Dynasty — Hub{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <h1>Softball Dynasty</h1>
+    <p class="hero-subtitle">Your central hub for all things softball</p>
+</section>
+
+<section class="apps-grid">
+    <a href="https://stats.softballdynasty.com" class="app-card">
+        <div class="app-icon">&#x1F4CA;</div>
+        <h2>Stats</h2>
+        <p>Team statistics tracker — batting averages, game logs, and performance trends.</p>
+    </a>
+
+    <a href="https://schedule.softballdynasty.com" class="app-card">
+        <div class="app-icon">&#x1F4C5;</div>
+        <h2>Schedule</h2>
+        <p>Game schedule — upcoming games, results, and season calendar.</p>
+    </a>
+
+    <a href="https://colleges.softballdynasty.com" class="app-card">
+        <div class="app-icon">&#x1F393;</div>
+        <h2>Colleges</h2>
+        <p>College softball info — programs, recruiting, and school details.</p>
+    </a>
+
+    <a href="https://play.softballdynasty.com" class="app-card">
+        <div class="app-icon">&#x26BE;</div>
+        <h2>Play</h2>
+        <p>Dynasty simulation game — build and manage your softball dynasty.</p>
+    </a>
+</section>
+{% endblock %}
