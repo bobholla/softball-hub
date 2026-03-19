@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Player Profile | Charlie Holladay</title>
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    .profile-header {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .profile-photo-placeholder {
+      width: 200px;
+      height: 250px;
+      background: var(--primary);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 0.9rem;
+      text-align: center;
+      padding: 1rem;
+      flex-shrink: 0;
+    }
+    .profile-info { flex: 1; min-width: 280px; }
+    .profile-info h1 { font-size: 2.2rem; color: var(--primary); margin-bottom: 0.25rem; }
+    .profile-info .position { font-size: 1.3rem; color: var(--text-light); margin-bottom: 1rem; }
+    .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.5rem; }
+    .info-item { padding: 0.5rem 0; }
+    .info-item .label { font-size: 0.75rem; text-transform: uppercase; color: var(--text-light); letter-spacing: 0.5px; }
+    .info-item .value { font-weight: 700; color: var(--primary); font-size: 1.05rem; }
+    .printable { background: white; }
+    @media print {
+      body { background: white; }
+      .no-print { display: none !important; }
+      .card { box-shadow: none; border: 1px solid #ddd; page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="layout">
+  <div class="content">
+
+  <div class="section-header no-print">
+    <h1>Player Profile</h1>
+    <p>Print-Ready Profile Sheet — Bring Copies to Camps and Events</p>
+  </div>
+
+  <div class="alert alert-info no-print">
+    <strong>How to Use This Page:</strong> This is a print-ready player profile. Print 10-15 copies and bring them to every camp and showcase. Hand them to coaches after introducing yourself. Update this page every time measurables change. You can also screenshot this and use it as a digital profile to attach to emails. <strong>Press Ctrl+P to print.</strong>
+  </div>
+
+  <!-- Printable Profile Card -->
+  <div class="card printable">
+    <div class="profile-header">
+      <div class="profile-photo-placeholder">
+        Add Action Photo<br><br>
+        (Replace this with a high-quality action shot in uniform — catching, hitting, or throwing)
+      </div>
+      <div class="profile-info">
+        <h1>Charlie Holladay</h1>
+        <div class="position">#8 | Catcher / Infield | Class of 2031</div>
+        <div class="info-grid">
+          <div class="info-item">
+            <div class="label">Travel Team</div>
+            <div class="value">Birmingham Mustangs 2030 Poe</div>
+          </div>
+          <div class="info-item">
+            <div class="label">School</div>
+            <div class="value">Hartselle Jr. High (AL)</div>
+          </div>
+          <div class="info-item">
+            <div class="label">Grad Year</div>
+            <div class="value">2031</div>
+          </div>
+          <div class="info-item">
+            <div class="label">Bats / Throws</div>
+            <div class="value">[R/R or L/R — update this]</div>
+          </div>
+          <div class="info-item">
+            <div class="label">Height / Weight</div>
+            <div class="value">[Update]</div>
+          </div>
+          <div class="info-item">
+            <div class="label">GPA</div>
+            <div class="value">[Update]</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Measurables Profile -->
+  <div class="card printable">
+    <h2>Measurables</h2>
+    <div class="grid-4">
+      <div class="stat-box">
+        <div class="stat-value">1.91</div>
+        <div class="stat-label">Pop Time</div>
+        <div class="stat-note">Hand-Timed | July 2025</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-value">TBD</div>
+        <div class="stat-label">Exit Velocity</div>
+        <div class="stat-note">Pending Test</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-value">TBD</div>
+        <div class="stat-label">Throw Velo</div>
+        <div class="stat-note">Pending Test</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-value">TBD</div>
+        <div class="stat-label">Home-to-1st</div>
+        <div class="stat-note">Pending Test</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="card printable">
+    <h2>Offensive Stats — Spring 2026 (7th Grade School Ball)</h2>
+    <p class="text-light">Hartselle Jr. High Tigers | 23 Games</p>
+    <div class="grid-4">
+      <div class="stat-box highlight">
+        <div class="stat-value">.610</div>
+        <div class="stat-label">AVG</div>
+      </div>
+      <div class="stat-box highlight">
+        <div class="stat-value">.652</div>
+        <div class="stat-label">OBP</div>
+      </div>
+      <div class="stat-box highlight">
+        <div class="stat-value">1.102</div>
+        <div class="stat-label">SLG</div>
+      </div>
+      <div class="stat-box highlight">
+        <div class="stat-value">1.754</div>
+        <div class="stat-label">OPS</div>
+      </div>
+    </div>
+    <table>
+      <tr>
+        <th>G</th><th>PA</th><th>AB</th><th>H</th><th>1B</th><th>2B</th><th>3B</th><th>HR</th>
+        <th>BB</th><th>R</th><th>RBI</th><th>SB</th><th>SO</th><th>TB</th>
+      </tr>
+      <tr>
+        <td>23</td><td>69</td><td>59</td><td>36</td><td>19</td><td>8</td><td>6</td><td>3</td>
+        <td>8</td><td>26</td><td>37</td><td>13</td><td>4</td><td>65</td>
+      </tr>
+    </table>
+    <div>
+      <h3>Key Stat Highlights</h3>
+      <ul>
+        <li><strong>Leads team in:</strong> AVG, OBP, SLG, OPS, Hits, 2B, 3B, HR, RBI, TB, SB</li>
+        <li><strong>Plate Discipline:</strong> 4 strikeouts in 69 plate appearances (5.8% K rate)</li>
+        <li><strong>Extra-Base Hit Rate:</strong> 17 XBH in 36 hits (47% of hits go for extra bases)</li>
+        <li><strong>Playing Up:</strong> Competes with Birmingham Mustangs 2030 team as a 2031</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Catching Profile -->
+  <div class="card printable">
+    <h2>Catching Profile</h2>
+    <div class="grid-2">
+      <div>
+        <h3>Strengths</h3>
+        <ul>
+          <li>Strong arm — 1.91 pop time (hand-timed) as a 7th grader</li>
+          <li>Elite bat — translates directly as a hitting catcher at any level</li>
+          <li>Consistent pop times (1.91, 1.92, 1.92 at USSSA All-Stars)</li>
+          <li>Plays up a year on 2030 team</li>
+          <li>Exceptional plate discipline behind the plate and at the plate</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Development Focus</h3>
+        <ul>
+          <li>Continuing to develop receiving/framing technique</li>
+          <li>Improving foot speed (noted improvement in spring 2026)</li>
+          <li>Working on exchange speed to improve pop time</li>
+          <li>Building arm strength for throw velocity</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Summer Schedule -->
+  <div class="card printable">
+    <h2>Summer 2026 Tournament Schedule</h2>
+    <table>
+      <tr>
+        <th>Dates</th>
+        <th>Event</th>
+        <th>Location</th>
+        <th>Team</th>
+      </tr>
+      <tr>
+        <td>May 30-31</td>
+        <td>Scout Town National Showcase</td>
+        <td>Montgomery, AL</td>
+        <td>Birmingham Mustangs 2030 Poe</td>
+      </tr>
+      <tr>
+        <td>June 6-7</td>
+        <td>PGF Super Grand Futures</td>
+        <td>Dallas, GA</td>
+        <td>Birmingham Mustangs 2030 Poe</td>
+      </tr>
+      <tr>
+        <td>June 12-14</td>
+        <td>Bolts 5 Star Exposure</td>
+        <td>Fultondale, AL</td>
+        <td>Birmingham Mustangs 2030 Poe</td>
+      </tr>
+      <tr>
+        <td>June 27-28</td>
+        <td>Stars Over Alabama Exposure</td>
+        <td>Gardendale, AL</td>
+        <td>Birmingham Mustangs 2030 Poe</td>
+      </tr>
+      <tr>
+        <td>July 11-12</td>
+        <td>Heart of Dixie Exposure</td>
+        <td>Fultondale, AL</td>
+        <td>Birmingham Mustangs 2030 Poe</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Contact / Links -->
+  <div class="card printable">
+    <h2>Contact & Links</h2>
+    <div class="grid-2">
+      <div>
+        <h3>Player Contact</h3>
+        <div class="info-grid">
+          <div class="info-item">
+            <div class="label">Email</div>
+            <div class="value">[Add recruiting email]</div>
+          </div>
+          <div class="info-item">
+            <div class="label">Phone (Parent)</div>
+            <div class="value">[Add parent phone]</div>
+          </div>
+        </div>
+
+        <h3>Travel Coach</h3>
+        <div class="info-grid">
+          <div class="info-item">
+            <div class="label">Coach</div>
+            <div class="value">Coach Poe — Birmingham Mustangs</div>
+          </div>
+          <div class="info-item">
+            <div class="label">Contact</div>
+            <div class="value">[Add coach phone/email]</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3>Online Profiles</h3>
+        <div class="info-grid">
+          <div class="info-item">
+            <div class="label">X / Twitter</div>
+            <div class="value">[Add handle]</div>
+          </div>
+          <div class="info-item">
+            <div class="label">TikTok</div>
+            <div class="value">@catcherchar4</div>
+          </div>
+          <div class="info-item">
+            <div class="label">Instagram</div>
+            <div class="value">[Set up & add handle]</div>
+          </div>
+          <div class="info-item">
+            <div class="label">Skills Video</div>
+            <div class="value">[YouTube link — create]</div>
+          </div>
+          <div class="info-item">
+            <div class="label">NCSA Profile</div>
+            <div class="value">[Create & add link]</div>
+          </div>
+          <div class="info-item">
+            <div class="label">School Stats</div>
+            <div class="value">stats.softballdynasty.com</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Academics -->
+  <div class="card printable">
+    <h2>Academics</h2>
+    <div class="grid-2">
+      <div>
+        <div class="info-grid">
+          <div class="info-item">
+            <div class="label">Current School</div>
+            <div class="value">Hartselle Jr. High</div>
+          </div>
+          <div class="info-item">
+            <div class="label">High School (2027+)</div>
+            <div class="value">Hartselle High School</div>
+          </div>
+          <div class="info-item">
+            <div class="label">GPA</div>
+            <div class="value">[Update]</div>
+          </div>
+          <div class="info-item">
+            <div class="label">Intended Major</div>
+            <div class="value">[If known]</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3>NCAA Eligibility Checklist</h3>
+        <ul class="checklist">
+          <li>Register at NCAA Eligibility Center (eligibilitycenter.org) — do by 9th grade</li>
+          <li>Maintain 2.3+ core GPA minimum (aim for 3.5+)</li>
+          <li>Complete 16 core courses (see NCAA requirements)</li>
+          <li>Take SAT or ACT and submit scores</li>
+          <li>Request final transcript sent to NCAA after graduation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- What to Update -->
+  <div class="card no-print">
+    <h2>Profile Items to Fill In / Update</h2>
+    <p class="text-light">These placeholders need to be filled in to complete the profile:</p>
+    <ul class="checklist">
+      <li>Action photo (replace placeholder)</li>
+      <li>Bats / Throws (R/R, L/R, etc.)</li>
+      <li>Height / Weight</li>
+      <li>GPA</li>
+      <li>Exit Velocity (schedule HitTrax session)</li>
+      <li>Throw Velocity (get radar gun reading)</li>
+      <li>Home-to-First time</li>
+      <li>Recruiting email address (consider creating: charlie.holladay.softball@gmail.com)</li>
+      <li>Parent phone number</li>
+      <li>Coach Poe's contact info</li>
+      <li>X/Twitter handle</li>
+      <li>Instagram handle (after creating account)</li>
+      <li>Skills video YouTube link (after filming)</li>
+      <li>NCSA profile link (after creating)</li>
+      <li>Intended major (if she has any ideas)</li>
+    </ul>
+    <div class="alert alert-info">
+      <strong>Tip:</strong> Create a dedicated recruiting email address like <strong>charlie.holladay.softball@gmail.com</strong>. This keeps recruiting emails organized and looks professional. Use it on all profiles, camp registrations, and coach emails.
+    </div>
+  </div>
+
+  </div>
+</div>
+
+<script>window.currentPage = 'recruiting/profile';</script>
+<script src="/components/nav.js"></script>
+</body>
+</html>

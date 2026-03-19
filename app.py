@@ -1,10 +1,12 @@
 import os
-from flask import Flask, render_template, redirect, url_for, request, flash
+from flask import Flask, render_template, redirect, url_for, request, flash, send_from_directory
 from flask_login import LoginManager, UserMixin, login_user, logout_user, login_required, current_user
 import bcrypt
 
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', 'dev-key-change-in-production')
+
+CHARLIE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'charlie')
 
 login_manager = LoginManager()
 login_manager.init_app(app)
@@ -37,7 +39,37 @@ def load_user(user_id):
 
 @app.route('/')
 def index():
+    return send_from_directory(CHARLIE_DIR, 'index.html')
+
+
+@app.route('/hub')
+def hub():
     return render_template('index.html')
+
+
+@app.route('/styles.css')
+def charlie_styles():
+    return send_from_directory(CHARLIE_DIR, 'styles.css')
+
+
+@app.route('/components/<path:filename>')
+def charlie_components(filename):
+    return send_from_directory(os.path.join(CHARLIE_DIR, 'components'), filename)
+
+
+@app.route('/recruiting/<path:filename>')
+def charlie_recruiting(filename):
+    return send_from_directory(os.path.join(CHARLIE_DIR, 'recruiting'), filename)
+
+
+@app.route('/training/<path:filename>')
+def charlie_training(filename):
+    return send_from_directory(os.path.join(CHARLIE_DIR, 'training'), filename)
+
+
+@app.route('/pitch-calling/<path:filename>')
+def charlie_pitch_calling(filename):
+    return send_from_directory(os.path.join(CHARLIE_DIR, 'pitch-calling'), filename)
 
 
 @app.route('/login', methods=['GET', 'POST'])

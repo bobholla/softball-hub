@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camp Strategy | Charlie Holladay</title>
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    .importance-bar {
+      display: inline-flex;
+      gap: 3px;
+      vertical-align: middle;
+    }
+    .importance-bar .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #dfe6e9;
+    }
+    .importance-bar .dot.filled { background: #e63946; }
+    .importance-bar .dot.filled.gold { background: #f4a261; }
+    .importance-bar .dot.filled.green { background: #2a9d8f; }
+    .camp-row td { vertical-align: top; }
+    .camp-link {
+      display: inline-block;
+      background: var(--primary);
+      color: white !important;
+      padding: 0.25rem 0.75rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-top: 0.25rem;
+    }
+    .camp-link:hover { background: var(--primary-light); }
+    .camp-link.secondary {
+      background: white;
+      color: var(--primary) !important;
+      border: 1px solid var(--primary);
+    }
+    .rating-num {
+      font-size: 1.4rem;
+      font-weight: 800;
+      display: block;
+      line-height: 1;
+    }
+    .rating-num.r10 { color: #c0392b; }
+    .rating-num.r9 { color: #e63946; }
+    .rating-num.r8 { color: #e67e22; }
+    .rating-num.r7 { color: #f4a261; }
+    .rating-num.r6 { color: #2a9d8f; }
+    .rating-num.r5 { color: #636e72; }
+  </style>
+</head>
+<body>
+
+<div class="layout">
+  <div class="content">
+
+  <div class="section-header">
+    <h1>Camp Strategy & Directory</h1>
+    <p>Rated 1-10 by Importance — With Registration Links</p>
+  </div>
+
+  <div class="alert alert-info">
+    <strong>Rating System:</strong> Each camp is rated 1-10 based on: proximity to Hartselle, recruiting value at Charlie's current age, program level, cost-effectiveness, and fit for a catcher/infield player. <strong>10 = Must Attend. 7-9 = Highly Recommended. 5-6 = Good Option. 1-4 = Lower Priority.</strong>
+  </div>
+
+  <!-- CAMP MASTER LIST -->
+  <div class="card">
+    <h2>Complete Camp Directory — Summer/Fall 2026 & Beyond</h2>
+
+    <!-- TIER 1: MUST ATTEND -->
+    <h3 class="tier-header tier-critical">
+      MUST ATTEND (Rating 9-10)
+    </h3>
+    <table>
+      <tr>
+        <th>Score</th>
+        <th>School / Camp</th>
+        <th>Level</th>
+        <th>Dates</th>
+        <th>Cost</th>
+        <th>Details</th>
+        <th>Links</th>
+      </tr>
+
+      <tr class="camp-row">
+        <td><span class="rating-num r10">10</span></td>
+        <td><strong>UNA (North Alabama)</strong><br>Elite Camp</td>
+        <td><span class="tag tag-d1">D1 ASUN</span></td>
+        <td>
+          <strong>June 10, 2026</strong> (1-5 PM)<br>
+          <strong>Aug 9, 2026</strong> (1-5 PM)<br>
+          Winter camps also offered (Dec/Jan)
+        </td>
+        <td>$100/day</td>
+        <td>
+          <strong>30 min from Hartselle. Cheapest D1 camp on this list.</strong> Open to 7th-12th grade. Includes hitting, fielding, throwing, baserunning, scrimmage, PLUS bat speed and throw velo evaluations. You get measurables AND evaluation in one trip. Recently moved to D1 — actively building roster. Coach Cozart runs it.
+        </td>
+        <td>
+          <a href="https://www.unasoftballcamp.com/" class="camp-link" target="_blank">Camp Website</a><br>
+          <a href="https://register.ryzer.com/camp.cfm?sport=3&id=303128" class="camp-link secondary" target="_blank">June 10 Ryzer</a><br>
+          <a href="https://register.ryzer.com/camp.cfm?sport=3&id=303135" class="camp-link secondary" target="_blank">Aug 9 Ryzer</a><br>
+          <span class="text-light text-sm">Call: 615-812-0204</span>
+        </td>
+      </tr>
+
+      <tr class="camp-row">
+        <td><span class="rating-num r10">10</span></td>
+        <td><strong>Auburn</strong><br>Elite Prospect Camp</td>
+        <td><span class="tag tag-d1">D1 SEC</span></td>
+        <td>
+          <strong>June 9, 2026</strong> (8AM-5PM)<br>
+          <strong>June 16, 2026</strong> (8AM-5PM)<br>
+          <strong>July 14, 2026</strong> (8AM-5PM)<br>
+          Also: Summer P/C Camp June 15
+        </td>
+        <td>$276</td>
+        <td>
+          <strong>SEC school. 3 dates to choose from.</strong> Charlie qualifies as rising 8th grader (Class of 2031). Full-day camp with offensive, defensive, and in-game evaluation. Optional campus tour 4-5PM. Run by Head Coach Chris Malveaux and staff. The <strong>June 15 Pitching & Catching Camp</strong> is position-specific and ideal for catchers (6th-12th grade).
+        </td>
+        <td>
+          <a href="https://www.malveauxsoftballcamps.com/" class="camp-link" target="_blank">Camp Website</a><br>
+          <a href="https://register.ryzer.com/camp.cfm?sport=3&id=320881" class="camp-link secondary" target="_blank">June 9 Ryzer</a>
+        </td>
+      </tr>
+
+      <tr class="camp-row">
+        <td><span class="rating-num r9">9</span></td>
+        <td><strong>Alabama A&M</strong><br>Prospect Camp</td>
+        <td><span class="tag tag-d1">D1 SWAC</span></td>
+        <td>
+          Summer/Fall dates TBA<br>
+          Winter Prospect Camp also offered
+        </td>
+        <td>~$75-125</td>
+        <td>
+          <strong>20 minutes from Hartselle.</strong> D1 program right in Huntsville. Lowest travel cost of any camp. Run by Head Coach Brian Daley. Check website for 2026 summer dates — they post camps periodically.
+        </td>
+        <td>
+          <a href="https://www.aamusoftballcamp.com/prospect-camp.cfm" class="camp-link" target="_blank">Camp Website</a><br>
+          <a href="https://register.ryzer.com/camp.cfm?id=314086" class="camp-link secondary" target="_blank">Ryzer Page</a>
+        </td>
+      </tr>
+
+      <tr class="camp-row">
+        <td><span class="rating-num r9">9</span></td>
+        <td><strong>Auburn</strong><br>Summer Pitching & Catching Camp</td>
+        <td><span class="tag tag-d1">D1 SEC</span></td>
+        <td>
+          <strong>June 15, 2026</strong><br>
+          6th-12th grade
+        </td>
+        <td>~$150-200</td>
+        <td>
+          <strong>POSITION-SPECIFIC camp for catchers.</strong> This is ideal for Charlie. SEC catching coaches will evaluate her receiving, blocking, throwing, and footwork up close. Position-specific camps get more individual attention than general prospect camps.
+        </td>
+        <td>
+          <a href="https://www.malveauxsoftballcamps.com/" class="camp-link" target="_blank">Camp Website</a>
+        </td>
+      </tr>
+    </table>
+
+    <!-- TIER 2: HIGHLY RECOMMENDED -->
+    <h3 class="tier-header tier-important">
+      HIGHLY RECOMMENDED (Rating 7-8)
+    </h3>
+    <table>
+      <tr>
+        <th>Score</th>
+        <th>School / Camp</th>
+        <th>Level</th>
+        <th>Dates</th>
+        <th>Cost</th>
+        <th>Details</th>
+        <th>Links</th>
+      </tr>
+
+      <tr class="camp-row">
+        <td><span class="rating-num r8">8</span></td>
+        <td><strong>Alabama</strong><br>Summer Camp</td>
+        <td><span class="tag tag-d1">D1 SEC</span></td>
+        <td>
+          <strong>June 2026</strong> (exact dates TBA — usually 4-day camp)<br>
+          Rising 8th-12th grade<br>
+          Also: Fall/Winter clinics
+        </td>
+        <td>$495</td>
+        <td>
+          <strong>The flagship.</strong> ~1 hr from Hartselle. Run by legendary coach Patrick Murphy. 4-day camp covers every position including catching. This is THE SEC camp in Alabama. Fills up fast — join their email list NOW to get notified when registration opens. Cost is higher but it's 4 days of elite instruction.
+        </td>
+        <td>
+          <a href="https://www.alabamasoftballcamp.com/" class="camp-link" target="_blank">Camp Website</a><br>
+          <a href="https://register.ryzer.com/camp.cfm?id=300173" class="camp-link secondary" target="_blank">Ryzer Page</a><br>
+          <span class="text-light text-sm">Join email list on site!</span>
+        </td>
+      </tr>
+
+      <tr class="camp-row">
+        <td><span class="rating-num r8">8</span></td>
+        <td><strong>Jacksonville State</strong><br>Prospect Camp</td>
+        <td><span class="tag tag-d1">D1 CUSA</span></td>
+        <td>
+          <strong>June 23, 2026</strong> (confirmed)<br>
+          Additional dates likely
+        </td>
+        <td>~$100-150</td>
+        <td>
+          ~2 hrs from Hartselle. Strong D1 program in Conference USA. Good mid-major target. Coaches actively recruit Alabama talent. Camp includes skills evaluation and live play.
+        </td>
+        <td>
+          <a href="https://softball.jsugamecocksportscamps.com/" class="camp-link" target="_blank">Camp Website</a><br>
+          <a href="https://register.ryzer.com/camp.cfm?sport=3&id=302839" class="camp-link secondary" target="_blank">June 23 Ryzer</a>
+        </td>
+      </tr>
+
+      <tr class="camp-row">
+        <td><span class="rating-num r8">8</span></td>
+        <td><strong>UAB</strong><br>Prospect Camp</td>
+        <td><span class="tag tag-d1">D1 AAC</span></td>
+        <td>
+          Dates TBA for 2026<br>
+          Fall prospect camps typical
+        </td>
+        <td>~$100-175</td>
+        <td>
+          ~1.5 hr from Hartselle (Birmingham). Connected through Mustangs travel ball. AAC conference D1 program. Head Coach Taylor Smartt runs camps. Check both camp websites below — UAB has had coaching changes, so both old and new pages may have info.
+        </td>
+        <td>
+          <a href="https://www.taylorsmarttsoftballcamps.com/" class="camp-link" target="_blank">Smartt Camps</a><br>
+          <a href="https://www.ajdaughertysoftballcamps.com/fall-prospect-camp.cfm" class="camp-link secondary" target="_blank">Daugherty Camps</a>
+        </td>
+      </tr>
+
+      <tr class="camp-row">
+        <td><span class="rating-num r8">8</span></td>
+        <td><strong>Mississippi State</strong><br>SEC Elite Camp</td>
+        <td><span class="tag tag-d1">D1 SEC</span></td>
+        <td>
+          <strong>March 27-28, 2026</strong> (8th-12th grade)<br>
+          Also: Aug elite camp, summer/winter options
+        </td>
+        <td>$215</td>
+        <td>
+          ~3 hrs from Hartselle. <strong>March 27-28 camp is THIS MONTH</strong> — but 8th grade minimum. Keep on radar for fall/winter. 2-day camp includes hitting Fri night, defense/tour/games Sat, PLUS a game ticket to MSU vs South Carolina. Great value.
+        </td>
+        <td>
+          <a href="https://www.hailstatecamps.com/softball/" class="camp-link" target="_blank">Camp Website</a><br>
+          <a href="https://register.ryzer.com/camp.cfm?sport=3&id=324945" class="camp-link secondary" target="_blank">Mar 27-28 Ryzer</a>
+        </td>
+      </tr>
+
+      <tr class="camp-row">
+        <td><span class="rating-num r7">7</span></td>
+        <td><strong>Samford</strong><br>Elite/Prospect Camp</td>
+        <td><span class="tag tag-d1">D1 SoCon</span></td>
+        <td>
+          Fall Classic, New Year Elite Camp, summer camps<br>
+          Dates TBA for summer 2026
+        </td>
+        <td>~$100-175</td>
+        <td>
+          ~1.5 hr from Hartselle (Homewood/Birmingham). Excellent academics + D1 softball. Run by Head Coach Megan Curry. Camps cover pitching, catching, fielding, and hitting. Combine with a Mustangs Birmingham trip.
+        </td>
+        <td>
+          <a href="https://www.megancurrysoftballcamps.com/" class="camp-link" target="_blank">Camp Website</a>
+        </td>
+      </tr>
+
+      <tr class="camp-row">
+        <td><span class="rating-num r7">7</span></td>
+        <td><strong>Tennessee</strong><br>Prospect / Skills Camp</td>
+        <td><span class="tag tag-d1">D1 SEC</span></td>
+        <td>
+          Fall Prospect Camp (Nov)<br>
+          Elite P/C Camp (Dec)<br>
+          Skills Camp (Dec)<br>
+          Summer dates TBA
+        </td>
+        <td>$150-300</td>
+        <td>
+          ~3 hrs from Hartselle. Elite SEC program. Coach Karen Weekly is a legend. The <strong>Elite Pitching & Catching Camp</strong> in December is perfect for Charlie — position-specific SEC evaluation. Accepts 2026-2031 grads. Wait for summer/fall 2026 dates to be posted.
+        </td>
+        <td>
+          <a href="https://www.tennesseesportcamps.com/" class="camp-link" target="_blank">Camp Website</a><br>
+          <a href="https://register.ryzer.com/camp.cfm?sport=3&id=314546" class="camp-link secondary" target="_blank">Ryzer Page</a>
+        </td>
+      </tr>
+
+      <tr class="camp-row">
+        <td><span class="rating-num r7">7</span></td>
+        <td><strong>Troy</strong><br>Top 30 Prospect Camp</td>
+        <td><span class="tag tag-d1">D1 Sun Belt</span></td>
+        <td>
+          <strong>Aug 24, 2026</strong><br>
+          <strong>Sept 14, 2026</strong><br>
+          <strong>Sept 28, 2026</strong><br>
+          <strong>Dec 14, 2026</strong><br>
+          Ages 13+ / 7th grade+
+        </td>
+        <td>$160</td>
+        <td>
+          ~4 hrs from Hartselle. <strong>Limited to 39 athletes per camp</strong> — small group = more attention from Coach Eric Newell's staff. Half the camp is live game play. Sun Belt D1 with real scholarship money. Multiple dates give flexibility. Also has All-Skills Clinics ($111) during spring.
+        </td>
+        <td>
+          <a href="https://www.ericnewellsoftballcamps.com/" class="camp-link" target="_blank">Camp Website</a><br>
+          <a href="https://register.ryzer.com/camp.cfm?sport=3&id=309970" class="camp-link secondary" target="_blank">Aug 24 Ryzer</a><br>
+          <a href="https://register.ryzer.com/camp.cfm?sport=3&id=309972" class="camp-link secondary" target="_blank">Sept 14 Ryzer</a>
+        </td>
+      </tr>
+
+      <tr class="camp-row">
+        <td><span class="rating-num r7">7</span></td>
+        <td><strong>UAH (Huntsville)</strong><br>Prospect Camp</td>
+        <td><span class="tag tag-d2">D2</span></td>
+        <td>
+          Dates TBA — facility renovation in progress<br>
+          Fall 2026 likely
+        </td>
+        <td>~$75-100</td>
+        <td>
+          <strong>20 min from Hartselle.</strong> D2 program with scholarship money. Currently renovating their field, so summer camps postponed to fall. Check website for updates. Coach Les Stuedeman runs camps. When they're back, this is a no-brainer due to proximity.
+        </td>
+        <td>
+          <a href="https://www.uahsoftballcamps.com/" class="camp-link" target="_blank">Camp Website</a>
+        </td>
+      </tr>
+    </table>
+
+    <!-- TIER 3: GOOD OPTIONS -->
+    <h3 class="tier-header tier-good">
+      GOOD OPTIONS (Rating 5-6)
+    </h3>
+    <table>
+      <tr>
+        <th>Score</th>
+        <th>School / Camp</th>
+        <th>Level</th>
+        <th>Dates</th>
+        <th>Cost</th>
+        <th>Details</th>
+        <th>Links</th>
+      </tr>
+
+      <tr class="camp-row">
+        <td><span class="rating-num r6">6</span></td>
+        <td><strong>Lipscomb</strong><br>Prospect / Middle School Elite Camp</td>
+        <td><span class="tag tag-d1">D1 ASUN</span></td>
+        <td>
+          Winter Prospect Camp (Jan — 9th+ only)<br>
+          <strong>Middle School Elite Camp</strong> — dates TBA<br>
+          Summer camps TBA
+        </td>
+        <td>$100-175</td>
+        <td>
+          ~2 hrs from Hartselle (Nashville). Good academics + ASUN D1. They offer a Middle School Elite Camp which is perfect for Charlie's age. Winter prospect camp is 9th+ only. Contact JJ.Dillingham@Lipscomb.edu for upcoming middle school camp dates.
+        </td>
+        <td>
+          <a href="https://www.lipscombsoftballcamps.com/" class="camp-link" target="_blank">Camp Website</a><br>
+          <a href="https://register.ryzer.com/camp.cfm?id=305837" class="camp-link secondary" target="_blank">MS Elite Ryzer</a>
+        </td>
+      </tr>
+
+      <tr class="camp-row">
+        <td><span class="rating-num r6">6</span></td>
+        <td><strong>Chattanooga (UTC)</strong><br>Prospect Camp</td>
+        <td><span class="tag tag-d1">D1 SoCon</span></td>
+        <td>
+          Dates TBA for 2026
+        </td>
+        <td>~$100-150</td>
+        <td>
+          ~3 hrs from Hartselle. SoCon D1 program. Coach Frank Reed runs camps at Frost Stadium. Check website for summer/fall dates. Good combo with a Chattanooga family trip.
+        </td>
+        <td>
+          <a href="https://www.utcsoftballcamps.com/" class="camp-link" target="_blank">Camp Website</a><br>
+          <span class="text-light text-sm">Call: 423-425-2107</span>
+        </td>
+      </tr>
+
+      <tr class="camp-row">
+        <td><span class="rating-num r6">6</span></td>
+        <td><strong>Ole Miss</strong><br>Elite / Showcase Camp</td>
+        <td><span class="tag tag-d1">D1 SEC</span></td>
+        <td>
+          Summer Showcase, Dec/Jan Elite Camps<br>
+          Dates TBA for 2026
+        </td>
+        <td>~$150-250</td>
+        <td>
+          ~3 hrs from Hartselle (Oxford, MS). SEC program with brand-new $30M+ stadium. Great experience. Better to attend in 8th-9th grade when measurables are stronger. Contact softballcamps@olemiss.edu or call 662-816-7489.
+        </td>
+        <td>
+          <a href="https://softball.olemisssportscamps.com/" class="camp-link" target="_blank">Camp Website</a>
+        </td>
+      </tr>
+
+      <tr class="camp-row">
+        <td><span class="rating-num r6">6</span></td>
+        <td><strong>South Alabama</strong><br>Prospect Camp</td>
+        <td><span class="tag tag-d1">D1 Sun Belt</span></td>
+        <td>
+          Preseason Elite (Jan)<br>
+          Summer Prospect (June)<br>
+          Fall Prospect (Aug)
+        </td>
+        <td>~$100-160</td>
+        <td>
+          ~5 hrs from Hartselle (Mobile). Solid Sun Belt D1 program. Coach Becky Clark runs camps at Jaguar Field. Good option if combining with a Gulf Coast trip. Limited to 60 campers — good attention ratio.
+        </td>
+        <td>
+          <a href="https://www.beckyclarksoftballcamps.com/" class="camp-link" target="_blank">Camp Website</a>
+        </td>
+      </tr>
+
+      <tr class="camp-row">
+        <td><span class="rating-num r6">6</span></td>
+        <td><strong>Wallace State</strong><br>Softball Camp</td>
+        <td><span class="tag tag-d3">JUCO</span></td>
+        <td>
+          Dates TBA for 2026
+        </td>
+        <td>~$50-100</td>
+        <td>
+          <strong>30 min from Hartselle</strong> (Hanceville). Extremely close JUCO with a strong softball program. Low cost, low travel. Good for getting extra reps and exposure to college-level instruction. JUCO coaches network with D1/D2 coaches.
+        </td>
+        <td>
+          <a href="https://www.wallacestatesoftballcamps.com/" class="camp-link" target="_blank">Camp Website</a>
+        </td>
+      </tr>
+
+      <tr class="camp-row">
+        <td><span class="rating-num r5">5</span></td>
+        <td><strong>Motlow State</strong><br>Visit / Level Up Events</td>
+        <td><span class="tag tag-d3">JUCO</span></td>
+        <td>
+          Visit a game: see schedule<br>
+          Level Up Sports events: various
+        </td>
+        <td>Free (game visit) / Event fees vary</td>
+        <td>
+          <strong>Already connected!</strong> Coach Janice and Macy coached Charlie at Level Up Sports. Not a traditional camp — but the relationship is gold. Visit a home game, stay connected through Level Up events. This relationship can open doors with 4-year programs.
+        </td>
+        <td>
+          <a href="https://www.motlowsports.com/sports/sball/2025-26/schedule" class="camp-link" target="_blank">Game Schedule</a>
+        </td>
+      </tr>
+    </table>
+
+    <!-- FUTURE TARGETS -->
+    <h3 class="tier-header tier-future">
+      FUTURE TARGETS — Attend in 8th-9th Grade When Measurables Are Stronger
+    </h3>
+    <table>
+      <tr>
+        <th>Score</th>
+        <th>School / Camp</th>
+        <th>Level</th>
+        <th>When to Attend</th>
+        <th>Details</th>
+        <th>Links</th>
+      </tr>
+      <tr class="camp-row">
+        <td><span class="rating-num r8">8+</span></td>
+        <td><strong>Alabama</strong> (if summer camp fills before you register)</td>
+        <td><span class="tag tag-d1">D1 SEC</span></td>
+        <td>Fall/Winter clinics 2026 or Summer 2027</td>
+        <td>If you can't get into the summer camp this year, attend a fall/winter clinic and try again for summer 2027. Join the email list NOW.</td>
+        <td><a href="https://www.alabamasoftballcamp.com/" class="camp-link" target="_blank">Camp Website</a></td>
+      </tr>
+      <tr class="camp-row">
+        <td><span class="rating-num r7">7</span></td>
+        <td><strong>Georgia</strong></td>
+        <td><span class="tag tag-d1">D1 SEC</span></td>
+        <td>Freshman year (2027-28)</td>
+        <td>~4 hrs. Elite SEC program. Wait until measurables are D1-competitive before attending. Worth the trip when ready.</td>
+        <td><em>Check UGA Athletics camps page</em></td>
+      </tr>
+      <tr class="camp-row">
+        <td><span class="rating-num r7">7</span></td>
+        <td><strong>South Carolina</strong></td>
+        <td><span class="tag tag-d1">D1 SEC</span></td>
+        <td>Freshman year (2027-28)</td>
+        <td>~5 hrs. Growing SEC program. Good option when she's ready for SEC-level camps.</td>
+        <td><em>Check USC Athletics camps page</em></td>
+      </tr>
+      <tr class="camp-row">
+        <td><span class="rating-num r6">6</span></td>
+        <td><strong>UT Martin</strong></td>
+        <td><span class="tag tag-d1">D1 OVC</span></td>
+        <td>8th grade (2026-27)</td>
+        <td>~3 hrs. Good D1 mid-major with less recruiting competition. Easier to stand out.</td>
+        <td><em>Check UTM Athletics camps page</em></td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- RECOMMENDED SUMMER 2026 PLAN -->
+  <div class="card card-highlighted">
+    <h2>Recommended Camp Plan — Summer/Fall 2026</h2>
+    <div class="alert alert-warning">
+      <strong>Budget-Smart Plan:</strong> With moderate budget and Charlie's travel schedule, here's the optimal camp plan that avoids conflicts with Mustangs tournaments. Target 3-4 camps this year.
+    </div>
+    <table>
+      <tr>
+        <th>Priority</th>
+        <th>Camp</th>
+        <th>Date</th>
+        <th>Cost</th>
+        <th>Conflict Check</th>
+      </tr>
+      <tr>
+        <td><strong>#1</strong></td>
+        <td><strong>UNA Elite Camp</strong> (Florence — 30 min)</td>
+        <td>June 10 (Tue)</td>
+        <td>$100</td>
+        <td>No conflict — falls between PGF (June 6-7) and Bolts (June 12-14)</td>
+      </tr>
+      <tr>
+        <td><strong>#2</strong></td>
+        <td><strong>Auburn Pitching & Catching Camp</strong></td>
+        <td>June 15 (Mon)</td>
+        <td>~$150-200</td>
+        <td>Day after Bolts 5 Star ends (June 14) — tight but doable</td>
+      </tr>
+      <tr>
+        <td><strong>#3</strong></td>
+        <td><strong>Auburn Elite Prospect Camp</strong> (if skipping P/C camp)</td>
+        <td>July 14 (Tue)</td>
+        <td>$276</td>
+        <td>No conflict — 2 days after Heart of Dixie (July 11-12)</td>
+      </tr>
+      <tr>
+        <td><strong>#4</strong></td>
+        <td><strong>Troy Top 30 Prospect Camp</strong></td>
+        <td>Aug 24 (Mon)</td>
+        <td>$160</td>
+        <td>No conflict — after summer travel season</td>
+      </tr>
+      <tr>
+        <td><strong>#5</strong></td>
+        <td><strong>Alabama Summer Camp</strong></td>
+        <td>June (4 days TBA)</td>
+        <td>$495</td>
+        <td>Check dates when posted — may overlap with travel schedule</td>
+      </tr>
+      <tr>
+        <td><strong>#6</strong></td>
+        <td><strong>UNA Elite Camp #2</strong> (Aug 9)</td>
+        <td>Aug 9 (Sat)</td>
+        <td>$100</td>
+        <td>No conflict — after summer travel season</td>
+      </tr>
+    </table>
+
+    <div>
+      <h3>Estimated Camp Budget (Summer 2026)</h3>
+      <table>
+        <tr><th>If attending 3 camps (minimum)</th><th>If attending 5 camps (ideal)</th></tr>
+        <tr>
+          <td>
+            UNA June 10: $100<br>
+            Auburn P/C: ~$175<br>
+            Troy Aug 24: $160<br>
+            <strong>Total: ~$435 + gas</strong>
+          </td>
+          <td>
+            UNA June 10: $100<br>
+            Auburn P/C: ~$175<br>
+            Auburn Prospect July 14: $276<br>
+            Troy Aug 24: $160<br>
+            UNA Aug 9: $100<br>
+            <strong>Total: ~$811 + gas</strong>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- Motlow State Visit Plan -->
+  <div class="card card-highlighted-green">
+    <h2>Motlow State Visit Plan — Spring 2026</h2>
+    <div class="alert alert-success">
+      <strong>Connection:</strong> Coach Janice and Coach Macy from Motlow State coached Charlie at the Level Up Sports winter tournament. This is a warm relationship to build on.
+    </div>
+
+    <h3>Upcoming Saturday Home Games at Motlow State:</h3>
+    <table>
+      <tr><th>Date</th><th>Time</th><th>Opponent</th><th>Status</th></tr>
+      <tr><td><strong>Sat, March 28</strong></td><td>1:00 PM (DH)</td><td>Jackson State CC</td><td><span class="tag tag-good">Open</span></td></tr>
+      <tr><td><strong>Sat, April 11</strong></td><td>12:00 PM (DH)</td><td>Southwest Tennessee CC</td><td><span class="tag tag-good">Recommended</span></td></tr>
+      <tr><td><strong>Sat, April 18</strong></td><td>12:00 PM (DH)</td><td>Walters State CC</td><td><span class="tag tag-good">Recommended</span></td></tr>
+    </table>
+
+    <h3>Steps:</h3>
+    <ol>
+      <li>Text/email Coach Janice or Macy: <em>"Hey Coach, this is Charlie Holladay's dad — she played with you at Level Up Sports. We'd love to come watch y'all play. Would April 11 or 18 work?"</em></li>
+      <li>Attend the doubleheader with Charlie</li>
+      <li>Say hi to the coaches after the game, catch up, mention Charlie's summer schedule</li>
+      <li>Send a thank-you text within 24 hours</li>
+    </ol>
+
+    <p><a href="https://www.motlowsports.com/sports/sball/2025-26/schedule" class="camp-link" target="_blank">View Full Motlow Schedule</a></p>
+  </div>
+
+  <!-- HOW TO MAXIMIZE CAMPS -->
+  <div class="card">
+    <h2>How to Maximize Every Camp</h2>
+    <div class="grid-2">
+      <div>
+        <h3>Before the Camp</h3>
+        <ul class="checklist">
+          <li>Email the coaching staff 1 week before (use the camp template from <a href="coach-contact.html">Coach Contact page</a>)</li>
+          <li>Research the coaches — know their names and what they coach</li>
+          <li>Pack: full catching gear, bat, cleats, batting gloves, extra hair ties, water, snacks</li>
+          <li>Get a good night's sleep. Eat a proper breakfast.</li>
+          <li>Print 10-15 copies of your <a href="profile.html">player profile</a></li>
+        </ul>
+
+        <h3>During the Camp</h3>
+        <ul class="checklist">
+          <li><strong>Arrive 15-20 min early.</strong> First impression matters.</li>
+          <li><strong>Introduce yourself:</strong> "Hi Coach [Name], I'm Charlie Holladay, I emailed you about attending today."</li>
+          <li><strong>Listen and implement feedback IMMEDIATELY.</strong> Coaches watch coachability.</li>
+          <li><strong>Go 100% on every rep.</strong> Even warmups. Coaches are ALWAYS watching.</li>
+          <li><strong>Be vocal.</strong> As a catcher — communicate, call balls, direct traffic, lead.</li>
+          <li><strong>Cheer for others.</strong> Be a great teammate. Energy and attitude matter.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>After the Camp</h3>
+        <ul class="checklist">
+          <li><strong>Thank every coach personally</strong> before leaving. Handshake, eye contact.</li>
+          <li><strong>Send a thank-you email within 24 hours.</strong></li>
+          <li><strong>Write down feedback</strong> — what did coaches say? What to work on?</li>
+          <li><strong>Post on social media:</strong> "Great day at [School] camp! Thank you @[handle]!"</li>
+        </ul>
+
+        <h3>What Coaches Evaluate at Camps</h3>
+        <ul>
+          <li><strong>Coachability</strong> — Do you listen and adjust? (#1 factor)</li>
+          <li><strong>Attitude/Energy</strong> — Positive, competitive, team-first</li>
+          <li><strong>Mechanics</strong> — Catching: receiving, framing, blocking, footwork</li>
+          <li><strong>Arm strength</strong> — Pop time, throw accuracy</li>
+          <li><strong>Bat</strong> — Swing mechanics, approach, bat speed</li>
+          <li><strong>Speed</strong> — Home-to-first, baserunning instincts</li>
+          <li><strong>Recovery</strong> — How you handle mistakes. Shake it off or dwell?</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Types of Camps -->
+  <div class="card">
+    <h2>Types of Camps — Know the Difference</h2>
+    <table>
+      <tr>
+        <th>Camp Type</th>
+        <th>What It Is</th>
+        <th>Cost</th>
+        <th>Recruiting Value</th>
+      </tr>
+      <tr>
+        <td><strong>College Prospect/Elite Camp</strong></td>
+        <td>Hosted by a college's coaching staff ON their campus. Skills stations + evaluation. This is the gold standard.</td>
+        <td>$75-300</td>
+        <td><span class="tag tag-critical">HIGHEST</span> — Basically an audition.</td>
+      </tr>
+      <tr>
+        <td><strong>Position-Specific Camp (P/C)</strong></td>
+        <td>Focused on catchers (and pitchers). Smaller group, more individual attention on position skills.</td>
+        <td>$100-250</td>
+        <td><span class="tag tag-critical">HIGHEST for catchers</span> — Coaches evaluate catching skills up close.</td>
+      </tr>
+      <tr>
+        <td><strong>Multi-Day Summer Camp</strong></td>
+        <td>3-4 day camp. More instruction, more reps, deeper evaluation. Alabama's is this type.</td>
+        <td>$300-500</td>
+        <td><span class="tag tag-important">Very High</span> — Extended time = coaches really get to know you.</td>
+      </tr>
+      <tr>
+        <td><strong>Skills Clinic</strong></td>
+        <td>Shorter (2-3 hrs). Focused on instruction. Less formal evaluation.</td>
+        <td>$50-150</td>
+        <td><span class="tag tag-good">Medium</span> — Great for improvement + coaches still notice standouts.</td>
+      </tr>
+      <tr>
+        <td><strong>Third-Party Showcase</strong></td>
+        <td>Run by orgs like Softball Factory, NCSA. College coaches may or may not attend.</td>
+        <td>$200-500+</td>
+        <td><span class="tag tag-info">Varies</span> — Research coach attendance before paying.</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Quick Registration Links -->
+  <div class="card">
+    <h2>Quick Links — All Camp Websites</h2>
+    <div class="grid-3">
+      <div>
+        <h3>D1 SEC</h3>
+        <ul class="link-list">
+          <li><a href="https://www.alabamasoftballcamp.com/" target="_blank">Alabama Softball Camps</a></li>
+          <li><a href="https://www.malveauxsoftballcamps.com/" target="_blank">Auburn (Malveaux) Camps</a></li>
+          <li><a href="https://www.tennesseesportcamps.com/" target="_blank">Tennessee Sports Camps</a></li>
+          <li><a href="https://www.hailstatecamps.com/softball/" target="_blank">Mississippi State Camps</a></li>
+          <li><a href="https://softball.olemisssportscamps.com/" target="_blank">Ole Miss Softball Camps</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>D1 Mid-Major</h3>
+        <ul class="link-list">
+          <li><a href="https://www.unasoftballcamp.com/" target="_blank">North Alabama (UNA)</a></li>
+          <li><a href="https://www.aamusoftballcamp.com/prospect-camp.cfm" target="_blank">Alabama A&M</a></li>
+          <li><a href="https://softball.jsugamecocksportscamps.com/" target="_blank">Jacksonville State</a></li>
+          <li><a href="https://www.taylorsmarttsoftballcamps.com/" target="_blank">UAB (Smartt Camps)</a></li>
+          <li><a href="https://www.megancurrysoftballcamps.com/" target="_blank">Samford (Curry Camps)</a></li>
+          <li><a href="https://www.ericnewellsoftballcamps.com/" target="_blank">Troy (Newell Camps)</a></li>
+          <li><a href="https://www.lipscombsoftballcamps.com/" target="_blank">Lipscomb</a></li>
+          <li><a href="https://www.utcsoftballcamps.com/" target="_blank">Chattanooga (UTC)</a></li>
+          <li><a href="https://www.beckyclarksoftballcamps.com/" target="_blank">South Alabama</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>D2 / JUCO</h3>
+        <ul class="link-list">
+          <li><a href="https://www.uahsoftballcamps.com/" target="_blank">UAH (Huntsville)</a></li>
+          <li><a href="https://www.wallacestatesoftballcamps.com/" target="_blank">Wallace State (Hanceville)</a></li>
+          <li><a href="https://www.motlowsports.com/sports/sball/2025-26/schedule" target="_blank">Motlow State (Schedule)</a></li>
+        </ul>
+        <h3>Directories</h3>
+        <ul class="link-list">
+          <li><a href="https://www.softballcampsusa.com/" target="_blank">SoftballCampsUSA.com</a></li>
+          <li><a href="https://www.fieldlevel.com/app/events?sportEnum=softball" target="_blank">FieldLevel Camp Finder</a></li>
+          <li><a href="https://www.ncsasports.org/softball/camps" target="_blank">NCSA Camp Finder</a></li>
+          <li><a href="https://nfca.org/camps" target="_blank">NFCA Camp Finder</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+<script>window.currentPage = 'recruiting/camps';</script>
+<script src="/components/nav.js"></script>
+</body>
+</html>
